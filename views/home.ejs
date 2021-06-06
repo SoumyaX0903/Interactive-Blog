@@ -1,0 +1,9 @@
+<%-include("partials/header")-%>
+<%for(let i=0;i<content.length;i++){%>
+    <h1><%= content[i].title%></h1>
+   <p><%=content[i].post.substring(0,100)+" ..."%>
+    <a href="/post/<%=content[i].title%>">read more</a>
+</p>
+
+<%}%>
+<%-include("partials/footer")-%>

@@ -1,0 +1,6 @@
+<%-include("partials/header")-%>
+<h1><%=Title%></h1>
+<p><%=Post%></p>
+<form action="/delete" method="POST">
+<button class="btn navigation" type="submit" name="blogtitle" value="<%=Title%>">Delete post</button></form>
+<%-include("partials/footer")-%>
